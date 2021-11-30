@@ -3,14 +3,13 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyDlxgZ7Q2SmBV-492dHHt6B6YS_-CK7qQg",
-  authDomain: "imdb-replica.firebaseapp.com",
-  databaseURL: "https://imdb-replica.firebaseio.com",
-  projectId: "imdb-replica",
-  storageBucket: "imdb-replica.appspot.com",
-  messagingSenderId: "320079055731",
-  appId: "1:320079055731:web:51fafeb4d0f1eeb70ad306",
-  measurementId: "G-NHLZJHL4DK",
+  apiKey: "AIzaSyBz1Nm7DpFJHOBgpITsTUzbKy0uI_3flQg",
+  authDomain: "webapp-e11a4.firebaseapp.com",
+  databaseURL: "https://webappe11a4.firebaseio.com",
+  projectId: "webapp-e11a4",
+  storageBucket: "webapp-e11a4.appspot.com",
+  messagingSenderId: "37062070335",
+  appId: "1:37062070335:web:5b2056a893646c588ee88a",
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
@@ -83,7 +82,6 @@ export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
 export const googleProvider = new firebase.auth.GoogleAuthProvider();
-export const facebookProvider = new firebase.auth.FacebookAuthProvider();
-export const githubProvider = new firebase.auth.GithubAuthProvider();
+
 
 export default firebase;
