@@ -8,14 +8,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import IMDbIcon from "../../static/assets/brands/imdb.png";
-import FacebookIcon from "../../static/assets/brands/facebook.png";
-import GithubIcon from "../../static/assets/brands/github.png";
 import GoogleIcon from "../../static/assets/brands/google.png";
 
 import {
   googleSignInStart,
-  facebookSignInStart,
-  githubSignInStart,
 } from "../../redux/user/user.actions";
 import { selectCurrentUser } from "../../redux/user/user.selectors";
 
@@ -58,16 +54,8 @@ const RegistrationPage = ({
       icon: GoogleIcon,
       signIn: googleSignInStart,
     },
-    {
-      name: "Facebook",
-      icon: FacebookIcon,
-      signIn: facebookSignInStart,
-    },
-    {
-      name: "Github",
-      icon: GithubIcon,
-      signIn: githubSignInStart,
-    },
+   
+    
   ];
   return (
     <div className="registration">
