@@ -112,21 +112,9 @@ export function* onGoogleSignInStart() {
   );
 }
 
-export function* onFacebookSignInStart() {
-  yield takeLatest(
-    UserActionTypes.FACEBOOK_SIGN_IN_START,
-    signInWithThirdParty,
-    facebookProvider
-  );
-}
 
-export function* onGithubSignInStart() {
-  yield takeLatest(
-    UserActionTypes.GITHUB_SIGN_IN_START,
-    signInWithThirdParty,
-    githubProvider
-  );
-}
+
+
 
 export function* signUp({ payload: { email, password, name } }) {
   try {
@@ -222,7 +210,6 @@ export function* onResetPassword() {
 export function* userSagas() {
   yield all([
     call(onGoogleSignInStart),
-    call(onFacebookSignInStart),
     call(onGithubSignInStart),
     call(onSignUpStart),
     call(onSignUpSuccess),
